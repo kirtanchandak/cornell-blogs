@@ -4,7 +4,12 @@ const app = express();
 app.set("view engine", "ejs");
 
 app.get("/", (req, res) => {
-  res.render("index", { title: "Home" });
+  const blogs = [
+    { title: "Yoshi finds eggs", snippet: "Lorem ipsum dolor sit amet" },
+    { title: "Mario finds stars", snippet: "Lorem ipsum dolor sit amet" },
+    { title: "How to defeat bowser", snippet: "Lorem ipsum dolor sit amet" },
+  ];
+  res.render("index", { title: "Home", blogs });
 });
 
 app.get("/about", (req, res) => {
@@ -16,6 +21,6 @@ app.get("/blogs/create", (req, res) => {
 });
 
 app.use((req, res) => {
-  res.status(404).render("404", { title: "Error" });
+  res.status(404).render("404", { title: "404" });
 });
 app.listen(3000);
