@@ -58,6 +58,12 @@
       margin-left: 20px;
     }
     /* index styles */
+    .blogs a {
+      display: block;
+      margin: 40px 0;
+      padding-left: 30px;
+      border-left: 6px solid crimson;
+    }
     /* details styles */
     /* create styles */
     .create-blog form {
@@ -86,4 +92,8 @@
       border: 0;
       font-size: 1.2em;
       cursor: pointer;
+    }
+
+    .singleblog {
+      margin-top: 1rem;
     }
