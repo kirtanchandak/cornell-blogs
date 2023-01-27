@@ -64,7 +64,21 @@
       padding-left: 30px;
       border-left: 6px solid crimson;
     }
+    .blogs a:hover h3 {
+      color: crimson;
+    }
     /* details styles */
+    .details {
+      position: relative;
+    }
+    .delete {
+      position: absolute;
+      top: 0;
+      right: 0;
+      background: crimson;
+      padding: 8px;
+      cursor: pointer;
+    } 
     /* create styles */
     .create-blog form {
       max-width: 400px;
